@@ -1,0 +1,203 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Ensure the body takes the full height of the viewport */
+body,
+html {
+    /* added to shape the page */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* end of eddition */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .grid, */
+header,
+footer {
+    /* 840 */
+    max-width: 1200px;
+    /* 100% */
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #222933;
+    font-size: 1.1rem;
+    /* margin-left: 1rem; */
+    font-weight: normal;
+    /* steelblue; */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    /* from the lesson Optional activity */
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    /* 700; */
+    color: #fff;
+    /* before refactoring */
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+h1 {
+    color: #fff;
+    /* steelblue; */
+    font-size: 1.6rem;
+    text-align: center;
+    /* border-bottom: 1px solid darkblue; */
+}
+
+.wddh1 {
+    background-color: rgb(0, 110, 182);
+    /* steelblue; */
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    /* width: 100%; */
+    /* margin-top: 15px; */
+    margin-top: auto;
+    /*replaced*/
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+img {
+    /* width: 150px; */
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+/* grid to shape content in main */
+/* main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+*/
+
+main img {
+    width: 150px;
+    float: right;
+}
+
+main {
+    /* 800px; */
+    max-width: 1200px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* .cards  */
+.card {
+    background-color: rgb(235, 232, 232);
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* end of .cards */
+
+p {
+    padding: 10px;
+}
+
+/* refactoring in Optional activity */
+/* .grid {
+    display: grid; */
+/* align-items: center; */
+/* max-width: 100%; */
+/* } */
+
+/* main { */
+/*840px; */
+/* Added code to fix main element */
+/* padding: 1 rem;
+    padding-right: 1rem; */
+/* padding: 20px; */
+/* flex: 1; Allow main to take up remaining space */
+/* grid-column: 2;
+    border-radius: 5px;
+
+} */
+
+/* aside { */
+/* Moved aside to the right */
+/* display: block; */
+/* position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2; */
+/* top: 1.5rem; */
+/* right: 0; */
+/* height: auto; */
+/* Initial code */
+/* width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    border-radius: 5px;
+} */
+
+/* aside img {
+    width: 200px;
+    height: auto;
+}
+*/
+
+.asidenav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: lightslategrey;
+}
+
+p {
+    padding: 0.2rem;
+}
+
+#lastModified {
+    color: yellowgreen;
+}
+
+footer {
+    background-color: rgb(0, 110, 182);
+    width: 100%;
+    margin-top: 15px;
+    padding: 0.2rem;
+    /* margin-top: auto; replaced */
+    border-top: 1px solid #000;
+    text-align: center;
+    color: #fff;
+}

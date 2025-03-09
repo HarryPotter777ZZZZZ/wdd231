@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page - Igor Ushenin | WDD231>
+        <meta name="description"
+            content="Course Home Page for WDD 231. Your full name. Keyword summary of page content.">
+        <meta name="author" content="Your Name">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.webp" alt="My Photo">
+        <span>Igor Ushenin</span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>Information about me...</p>
+        </section>
+        <section>
+            <h2>Courses</h2>
+            <div id="course-filters">
+                <button data-filter="all">All Courses</button>
+                <button data-filter="WDD">WDD Courses</button>
+                <button data-filter="CSE">CSE Courses</button>
+            </div>
+            <div id="course-list"></div>
+            <p id="total-credits">Total Credits: <span id="credit-count"></span></p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>Contact information.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Your Name. Your State or Country.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
