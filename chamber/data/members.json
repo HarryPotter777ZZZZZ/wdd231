@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Company A",
+        "address": "123 Main St, City, State",
+        "phone": "(123) 456-7890",
+        "website": "https://companya.com",
+        "image": "companya.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Company B",
+        "address": "456 Elm St, City, State",
+        "phone": "(123) 456-7891",
+        "website": "https://companyb.com",
+        "image": "companyb.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Company C",
+        "address": "789 Oak St, City, State",
+        "phone": "(123) 456-7892",
+        "website": "https://companyc.com",
+        "image": "companyc.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Company D",
+        "address": "101 Pine St, City, State",
+        "phone": "(123) 456-7893",
+        "website": "https://companyd.com",
+        "image": "companyd.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Company E",
+        "address": "202 Cedar St, City, State",
+        "phone": "(123) 456-7894",
+        "website": "https://companye.com",
+        "image": "companye.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Company F",
+        "address": "303 Maple St, City, State",
+        "phone": "(123) 456-7895",
+        "website": "https://companyf.com",
+        "image": "companyf.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Company G",
+        "address": "404 Birch St, City, State",
+        "phone": "(123) 456-7896",
+        "website": "https://companyg.com",
+        "image": "companyg.png",
+        "membershipLevel": 1
+    }
+]
