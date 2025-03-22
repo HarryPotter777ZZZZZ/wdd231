@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+    }
+
+    .spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.spotlight-card {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

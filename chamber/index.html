@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Chamber of Commerce</title>
+    <meta name="description" content="Promoting local business growth and community development">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Chamber logo" width="100">
+        <nav>
+            <button id="menu-button">☰</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 767px)">
+                <img src="images/hero-large.webp" alt="City skyline">
+            </picture>
+            <a href="join.html" class="cta">Join the Chamber</a>
+        </section>
+
+        <section class="current-events">
+            <h2>Upcoming Events</h2>
+            <div class="event-card">
+                <!-- Dynamic content from JSON -->
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <div id="weather-data"></div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Moscow Chamber of Commerce</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/chamber.js" defer></script>
+</body>
+
+</html>
