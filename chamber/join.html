@@ -1,0 +1,88 @@
+<!--- join.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Same head content as other pages -->
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+
+<body>
+    <header><!-- Common header --></header>
+    <nav><!-- Common navigation --></nav>
+
+    <main class="join-main">
+        <form id="joinForm" method="get" action="thankyou.html">
+            <h1>Membership Application</h1>
+
+            <label>First Name:
+                <input type="text" name="firstName" required autocomplete="given-name" title="First Name">
+            </label>
+
+            <label>Last Name:
+                <input type="text" name="lastName" required autocomplete="family-name" title="Last Name">
+            </label>
+
+            <label>Title:
+                <input type="text" name="title" pattern="[A-Za-z\- ]{7,}" autocomplete="organization-title"
+                    title="7+ characters (letters, spaces, hyphens)">
+            </label>
+
+            <label>Email:
+                <input type="email" name="email" required autocomplete="email" placeholder="user@domain.com">
+            </label>
+
+            <label>Mobile:
+                <input type="tel" name="phone" required autocomplete="tel" title="Phone number">
+            </label>
+
+            <label>Business Name:
+                <input type="text" name="business" required autocomplete="organization">
+            </label>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="level" value="np" required> NP (Non-Profit)</label>
+                <label><input type="radio" name="level" value="bronze"> Bronze</label>
+                <label><input type="radio" name="level" value="silver"> Silver</label>
+                <label><input type="radio" name="level" value="gold"> Gold</label>
+            </fieldset>
+
+            <label>Description:
+                <textarea name="description"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <div class="membership-cards">
+            <!-- Membership cards with modal triggers -->
+            <div class="card np-card">
+                <h3>NP Membership</h3>
+                <p>Free for Non-Profits</p>
+                <a href="#np-modal" class="modal-trigger">Details</a>
+            </div>
+            <!-- Repeat for Bronze, Silver, Gold -->
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <div id="np-modal" class="modal">
+        <div class="modal-content">
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>Free membership</li>
+                <li>Network access</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+    <!-- Repeat modals for other levels -->
+
+    <footer><!-- Common footer --></footer>
+
+    <script src="scripts/join.js"></script>
+</body>
+
+</html>
